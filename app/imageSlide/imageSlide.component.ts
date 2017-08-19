@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
-import {Images} from './my-variable';
+import {Images} from '../variable/my-variable';
 
 @Component({
-  selector: 'css-carousel',
-  template: `
+selector: 'my-slide',
+template: `
  <div class="carousel">
  <ul class="slides">
  <li *ngFor="let image of images">
@@ -13,7 +13,7 @@ import {Images} from './my-variable';
 </ul>
 </div>
   `,
-  styleUrls:['app/home.component.css']
+  styleUrls:['app/home/home.component.css']
   ,
 })
 export class CSSCarouselComponent {

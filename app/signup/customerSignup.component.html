@@ -1,0 +1,52 @@
+<div class="container">
+  <h2>Customer Data</h2>
+  
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" name="name" [(ngModel)]="data.name">
+    </div>  
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" name="email" [(ngModel)]="data.email">
+    </div>
+    <div class="form-group">
+      <label>Contact Number</label>
+      <input type="text" class="form-control" name="contact" [(ngModel)]="data.contact">
+    </div>
+    <div class="form-group">
+      <label>Address</label>
+      <input type="text" class="form-control" name="address" [(ngModel)]="data.address">
+    </div>
+     <div class="dropdown">
+     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" name="level" [(ngModel)]="data.level" >Select your level
+     <span class="caret"></span></button>
+     <ul class="dropdown-menu">
+       <li><a href="#">Cook Tier 5(Chef)</a></li>
+       <li><a href="#">Cook Tier 4(Best)</a></li>
+       <li><a href="#">Cook Tier 3(Better)</a></li>
+       <li><a href="#">Cook Tier 2(Good)</a></li>
+       <li><a href="#">Cook Tier 1(Average)</a></li>
+       </ul>
+       </div> 
+      <div class="dropdown">
+     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" name="salary" [(ngModel)]="data.salary" >Expected Monthly salary (per person-2 time food )
+     <span class="caret"></span></button>
+     <ul class="dropdown-menu">
+       <li><a class="fa fa-inr" href="#">2.5k and above</a></li>
+       <li><a class="fa fa-inr" href="#">2k-2.5k</a></li>
+       <li><a class="fa fa-inr" href="#">1800-2k</a></li>
+       <li><a class="fa fa-inr" href="#">1500-1800</a></li>
+       <li><a class="fa fa-inr" href="#">1200-1500</a></li>
+       </ul>
+       </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="text" class="form-control" name="pass" [(ngModel)]="data.pass">
+    </div>
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input type="text" class="form-control" name="cPass" [(ngModel)]="data.cPass">
+    </div>
+    <button type="submit" (click)=onSubmit() class="btn btn-primary">Submit</button>
+  
+</div>

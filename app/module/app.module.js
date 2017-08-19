@@ -9,22 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
-var router_1 = require("@angular/router");
-var app_component_1 = require("./app.component");
-var home_component_1 = require("./home.component");
-var imageSlide_component_1 = require("./imageSlide.component");
-var customerSignup_component_1 = require("./customerSignup.component");
+var forms_1 = require("@angular/forms");
+var app_routing_module_1 = require("../routing/app-routing.module");
+var app_component_1 = require("../appComponent/app.component");
+var app_routing_module_2 = require("../routing/app-routing.module");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule,
-                router_1.RouterModule.forRoot([
-                    { path: '', component: home_component_1.HomeComponent },
-                    { path: 'signup', component: customerSignup_component_1.CustomerSignupComponent }
-                ])],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, imageSlide_component_1.CSSCarouselComponent, customerSignup_component_1.CustomerSignupComponent],
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, app_routing_module_1.AppRoutingModule],
+            declarations: [app_component_1.AppComponent, app_routing_module_2.routingComponents],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

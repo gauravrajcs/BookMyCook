@@ -7,15 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var CustomerSignupComponent = (function () {
-    function CustomerSignupComponent() {
+var HeaderComponent = (function () {
+    function HeaderComponent() {
     }
-    CustomerSignupComponent = __decorate([
+    HeaderComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/customerSignup.component.html'
+            selector: 'my-header',
+            templateUrl: '/app/header/header.component.html',
+            styleUrls: ['/app/home/home.component.css']
         })
-    ], CustomerSignupComponent);
-    return CustomerSignupComponent;
+    ], HeaderComponent);
+    return HeaderComponent;
 }());
-exports.CustomerSignupComponent = CustomerSignupComponent;
-//# sourceMappingURL=customerSignup.component.js.map
+exports.HeaderComponent = HeaderComponent;
+//# sourceMappingURL=header.component.js.map
