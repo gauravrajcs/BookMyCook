@@ -14,7 +14,7 @@ var HeaderComponent = (function () {
         core_1.Component({
             selector: 'my-header',
             templateUrl: '/app/header/header.component.html',
-            styleUrls: ['/app/home/home.component.css']
+            styleUrls: ['app/header/header.component.css']
         })
     ], HeaderComponent);
     return HeaderComponent;

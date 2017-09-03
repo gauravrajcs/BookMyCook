@@ -1,0 +1,28 @@
+.clear { clear: both; }
+.searchBox{
+    background-color:#337ab7;
+    margin-top: 0px;
+}
+.searchCity{
+    float:left;
+    font-size: 24px;
+}
+/*.searchArea{
+    float:left;
+}*/
+.searchLevel{
+    float: left;
+    margin-left: 20px;
+    font-size: 24px;
+    
+}
+.searchButton{
+    float:right;
+    margin-right: 20px;
+ 
+}
+.searchText{
+    float:right;
+    margin-right: 20px;
+    font-size: 19px;
+}

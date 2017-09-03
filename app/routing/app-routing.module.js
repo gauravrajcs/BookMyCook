@@ -15,9 +15,11 @@ var customerSignup_component_1 = require("../signup/customerSignup.component");
 var header_component_1 = require("../header/header.component");
 var footer_component_1 = require("../footer/footer.component");
 var searchCook_component_1 = require("../searchCook/searchCook.component");
+var login_component_1 = require("../login/login.component");
 var routes = [
     { path: '', component: home_component_1.HomeComponent },
-    { path: 'signup', component: customerSignup_component_1.CustomerSignupComponent }
+    { path: 'signup', component: customerSignup_component_1.CustomerSignupComponent },
+    { path: 'login', component: login_component_1.CustomerLoginComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -31,5 +33,9 @@ var AppRoutingModule = (function () {
     return AppRoutingModule;
 }());
 exports.AppRoutingModule = AppRoutingModule;
-exports.routingComponents = [app_component_1.AppComponent, home_component_1.HomeComponent, imageSlide_component_1.CSSCarouselComponent, customerSignup_component_1.CustomerSignupComponent, header_component_1.HeaderComponent, footer_component_1.FooterComponent, searchCook_component_1.searchCookComponent];
+exports.routingComponents = [
+    app_component_1.AppComponent, home_component_1.HomeComponent, imageSlide_component_1.CSSCarouselComponent,
+    customerSignup_component_1.CustomerSignupComponent, header_component_1.HeaderComponent, footer_component_1.FooterComponent,
+    searchCook_component_1.searchCookComponent, login_component_1.CustomerLoginComponent, customerSignup_component_1.EqualValidator
+];
 //# sourceMappingURL=app-routing.module.js.map

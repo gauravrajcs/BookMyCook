@@ -15,7 +15,7 @@ var CSSCarouselComponent = (function () {
         core_1.Component({
             selector: 'my-slide',
             template: "\n <div class=\"carousel\">\n <ul class=\"slides\">\n <li *ngFor=\"let image of images\">\n      <h2>{{image.title}}</h2>\n      <img src=\"{{image.url}}\" alt=\"\">\n</li>\n</ul>\n</div>\n  ",
-            styleUrls: ['app/home/home.component.css'],
+            styleUrls: ['app/imageSlide/imageSlide.component.css'],
         })
     ], CSSCarouselComponent);
     return CSSCarouselComponent;

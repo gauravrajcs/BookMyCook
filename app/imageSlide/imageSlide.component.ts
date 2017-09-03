@@ -13,7 +13,7 @@ template: `
 </ul>
 </div>
   `,
-  styleUrls:['app/home/home.component.css']
+  styleUrls:['app/imageSlide/imageSlide.component.css']
   ,
 })
 export class CSSCarouselComponent {

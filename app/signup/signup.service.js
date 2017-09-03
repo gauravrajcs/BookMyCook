@@ -12,16 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
-var map_1 = require("rxjs/operator/map");
 var SignUpService = (function () {
     function SignUpService(_http) {
         this._http = _http;
         this._url = "";
     }
-    SignUpService.prototype.postUserData = function () {
-        return this._http.get(this._url);
-        map_1.map(function (response) { return response.json(); });
-    };
     SignUpService = __decorate([
         core_1.Injectable(),
         __metadata("design:paramtypes", [http_1.Http])

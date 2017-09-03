@@ -8,9 +8,9 @@ export class SignUpService{
 private _url: string = ""
 constructor(private _http:Http){} 
 
-postUserData(){
- return this._http.get(this._url);
-    .map((response:Response) => response.json());
-    }
+// postUserData(){
+//  return this._http.get(this._url);
+//     .map((response:Response) => response.json());
+//     }
    
 }   

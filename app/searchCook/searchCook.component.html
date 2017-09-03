@@ -1,30 +1,34 @@
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <form class="navbar-form navbar-left">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+<div class="searchBox">
+      <div class="searchCity">
+        
+          <select [(ngModel)]="selectedCity.id" (change)="onSelect($event.target.value)">
+          <option value="0">Select City</option>
+          <option *ngFor="let city of cities" value= {{city.id}}>{{city.name}}</option>
+          </select>
+          <!--<div class="searchArea" >-->
+            <select>
+            <option *ngIf='selectedCity.id == 0' value="0">Select Area</option>
+            <option *ngFor="let area of areas " value= {{area.id}}>{{area.name}}</option>
+            </select>
+          <!--</div>-->
+       </div>
+       <div class="searchLevel">
+        <select  name="level" >
+          <!-- [(ngModel)]="search.level" -->
+        <option>Select Level</option>
+        <option>Cook Tier 5(Chef)</option>
+        <option>Cook Tier 4(Best)</option>
+        <option>Cook Tier 3(Better)</option>
+        <option>Cook Tier 2(Good)</option>
+        <option>Cook Tier 1(Average)</option>
+        </select>
+        </div> 
+       
+      <div class="searchButton" >
+      <button type="submit"  class="btn btn-default">Submit</button>
       </div>
-       <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Cook Level
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Cook Tier 4(Best)</a></li>
-    <li><a href="#">Cook Tier 3(Better)</a></li>
-    <li><a href="#">Cook Tier 2(Good)</a></li>
-    <li><a href="#">Cook Tier 1(Average)</a></li>
-  </ul>
-</div> 
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select City
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Bangalore</a></li>
-    <li><a href="#">New Delhi</a></li>
-    <li><a href="#">Mumbai</a></li>
-    <li><a href="#">Kolkata</a></li>
-  </ul>
+      <div class="searchText" >
+        <input type="text"  placeholder="Search">
+      </div>
+      <div class="clear"></div>
 </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-  </div>
-</nav>

@@ -12,4 +12,10 @@ h2, h3 {
 body {
   margin: 2em;
 }
+/*.clear { clear: both; }
+.searchBox{
+    background-color: green;
+    float: left;
+    margin-left: 20px;
+}*/
 

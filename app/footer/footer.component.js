@@ -14,7 +14,7 @@ var FooterComponent = (function () {
         core_1.Component({
             selector: 'my-footer',
             templateUrl: '/app/footer/footer.component.html',
-            styleUrls: ['/app/home/home.component.css']
+            styleUrls: ['app/footer/footer.component.css']
         })
     ], FooterComponent);
     return FooterComponent;
