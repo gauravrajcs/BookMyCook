@@ -24,4 +24,4 @@ var SignUpService = (function () {
     return SignUpService;
 }());
 exports.SignUpService = SignUpService;
-//# sourceMappingURL=signup.service.js.map
+//# sourceMappingURL=signupCook.service.js.map

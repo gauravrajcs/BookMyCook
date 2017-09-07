@@ -11,15 +11,19 @@ var router_1 = require("@angular/router");
 var app_component_1 = require("../appComponent/app.component");
 var home_component_1 = require("../home/home.component");
 var imageSlide_component_1 = require("../imageSlide/imageSlide.component");
-var customerSignup_component_1 = require("../signup/customerSignup.component");
+var signupCook_component_1 = require("../signupCook/signupCook.component");
 var header_component_1 = require("../header/header.component");
 var footer_component_1 = require("../footer/footer.component");
 var searchCook_component_1 = require("../searchCook/searchCook.component");
 var login_component_1 = require("../login/login.component");
+var getSearchCook_component_1 = require("../searchCook/getSearchCook.component");
+var signupCustomer_component_1 = require("../signupCustomer/signupCustomer.component");
 var routes = [
     { path: '', component: home_component_1.HomeComponent },
-    { path: 'signup', component: customerSignup_component_1.CustomerSignupComponent },
-    { path: 'login', component: login_component_1.CustomerLoginComponent }
+    { path: 'signupCook', component: signupCook_component_1.CookSignupComponent },
+    { path: 'login', component: login_component_1.CustomerLoginComponent },
+    { path: 'cooksearchdata', component: getSearchCook_component_1.GetCookSearchComponent },
+    { path: 'signupCustomer', component: signupCustomer_component_1.CustomerSignupComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -35,7 +39,8 @@ var AppRoutingModule = (function () {
 exports.AppRoutingModule = AppRoutingModule;
 exports.routingComponents = [
     app_component_1.AppComponent, home_component_1.HomeComponent, imageSlide_component_1.CSSCarouselComponent,
-    customerSignup_component_1.CustomerSignupComponent, header_component_1.HeaderComponent, footer_component_1.FooterComponent,
-    searchCook_component_1.searchCookComponent, login_component_1.CustomerLoginComponent, customerSignup_component_1.EqualValidator
+    signupCook_component_1.CookSignupComponent, header_component_1.HeaderComponent, footer_component_1.FooterComponent,
+    searchCook_component_1.searchCookComponent, login_component_1.CustomerLoginComponent, signupCook_component_1.EqualValidator,
+    getSearchCook_component_1.GetCookSearchComponent, signupCustomer_component_1.CustomerSignupComponent
 ];
 //# sourceMappingURL=app-routing.module.js.map

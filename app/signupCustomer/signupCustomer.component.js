@@ -42,7 +42,7 @@ var CustomerSignupComponent = (function () {
     };
     CustomerSignupComponent = __decorate([
         core_1.Component({
-            templateUrl: '/app/signup/customerSignup.component.html'
+            templateUrl: '/app/signupCustomer/signupCustomer.component.html'
         }),
         __metadata("design:paramtypes", [http_1.Http, router_1.Router])
     ], CustomerSignupComponent);
@@ -68,7 +68,7 @@ var EqualValidator = (function () {
     };
     EqualValidator = EqualValidator_1 = __decorate([
         core_1.Component({
-            templateUrl: '/app/signup/customerSignup.component.html',
+            templateUrl: '/app/signupCustomer/signupCustomer.component.html',
             selector: '[validateEqual][formControlName],[validateEqual][formControl],[validateEqual][ngModel]',
             providers: [
                 { provide: forms_1.NG_VALIDATORS, useExisting: core_2.forwardRef(function () { return EqualValidator_1; }), multi: true }
@@ -81,4 +81,4 @@ var EqualValidator = (function () {
     var EqualValidator_1;
 }());
 exports.EqualValidator = EqualValidator;
-//# sourceMappingURL=customerSignup.component.js.map
+//# sourceMappingURL=signupCustomer.component.js.map

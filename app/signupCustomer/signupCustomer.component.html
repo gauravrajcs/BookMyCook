@@ -50,7 +50,7 @@
       <input type="text" class="form-control" name="address" [(ngModel)]="data.address">
     </div>
      <div class="form-group">
-      <label for="level">Select list:</label>
+      <label for="level">Which Level of Cook you want?</label>
        <select class="form-control" name="level" [(ngModel)]="data.level">
        <option>Cook Tier 5(Chef)</option>
        <option>Cook Tier 4(Best)</option>
@@ -60,8 +60,9 @@
        </select>
        </div> 
       <div class="form-group">
-      <label for="salary">Select list:</label>
+      <label for="salary">How much you want to pay(Per Person & Twice a Day)?<b><a href="#">(Check Salary Mapping with Cook Level)</a></b></label>
        <select class="form-control" name="salary" [(ngModel)]="data.salary">
+       <option class="fa fa-inr">5k and above</option>
        <option class="fa fa-inr">2.5k and above</option>
        <option class="fa fa-inr">2k-2.5k</option>
        <option class="fa fa-inr">1800-2k</option>
@@ -81,13 +82,14 @@
       <div class="form-group">
       <label>Confirm Password</label>
       <input type="password" class="form-control" id="confirmPassword" required
-      validateEqual="password"
+      
       [(ngModel)]="data.confirmPassword" name="confirmPassword" #confirmPassword="ngModel">
           <div [hidden]="confirmPassword.valid || confirmPassword.pristine"
             class="alert alert-danger">
             Passwords did not match
         </div>
   </div>
+  <!--validateEqual="password"-->
   <!--  <div class="form-group">
       <label>Password</label>
       <input type="text" class="form-control" name="pass" [(ngModel)]="data.pass">

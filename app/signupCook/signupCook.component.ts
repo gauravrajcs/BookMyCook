@@ -8,11 +8,11 @@ import { NG_VALIDATORS,Validator,
 
 @Component({
 
-  templateUrl:'/app/signup/customerSignup.component.html'
+  templateUrl:'/app/signupCook/signupCook.component.html'
   
 })
 
-export class CustomerSignupComponent {
+export class CookSignupComponent {
    router: Router;
   constructor(private http: Http,_router: Router){
     this.router = _router;
@@ -41,7 +41,7 @@ data:any = {
 }
 
 @Component({
-  templateUrl:'/app/signup/customerSignup.component.html',
+  templateUrl:'/app/signupCook/signupCook.component.html',
   selector: '[validateEqual][formControlName],[validateEqual][formControl],[validateEqual][ngModel]',
   providers: [
         { provide: NG_VALIDATORS, useExisting: forwardRef(() => EqualValidator), multi: true }
